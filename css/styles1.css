@@ -20,6 +20,10 @@ header {
     overflow: hidden;
 }
 
+section {
+    height: 100vh;
+}
+
 #main-menu {
     display: flex;
     flex-wrap: nowrap;
@@ -48,7 +52,7 @@ nav a:hover {
 }
 
 #btn-burger {
-    display: none;
+    /*display: none;*/
     position: fixed;
     top: 20px;
     right: 20px;
