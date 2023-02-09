@@ -74,7 +74,7 @@ nav a:hover {
     max-width: 80%;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 500px) {
     #btn-burger {
         display: block;
     }
