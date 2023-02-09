@@ -52,7 +52,7 @@ nav a:hover {
 }
 
 #btn-burger {
-    /*display: none;*/
+    display: none;
     position: fixed;
     top: 20px;
     right: 20px;
