@@ -1,5 +1,6 @@
-const button = document.getElementById('btn-burger');
-const btnPath = button.getElementsByTagName('path').item(0);
+const btnBurger = document.getElementById('btn-burger');
+const burgerPath = btnBurger.getElementsByTagName('path').item(0);
+const btnCta = document.getElementById('btn-cta');
 const menu = document.getElementById('main-menu');
 
 const openPath = 'M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z';
@@ -8,18 +9,16 @@ const closePath = 'm12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.5
 
 let menuOpen = false;
 
-button.addEventListener('pointerdown', () => {
+btnBurger.addEventListener('pointerdown', () => {
     if (!menuOpen) {
-        menu.classList.remove('hide-menu');
-        btnPath.setAttribute('d', closePath);
-        btnPath.setAttribute('fill', '#ffffff');
+        menu.style.display = 'flex';
+        burgerPath.setAttribute('d', closePath);
         menuOpen = true;
         return;
     }
 
-    menu.classList.add('hide-menu');
-    btnPath.setAttribute('d', openPath);
-    btnPath.setAttribute('fill', '#222222');
+    menu.style.display = 'none';
+    burgerPath.setAttribute('d', openPath);
     menuOpen = false;
     return;
 });
