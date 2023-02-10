@@ -1,10 +1,36 @@
-function setBodyHeight(){
+function setBodyHeight() {
     document.body.style.height = window.innerHeight + 'px';
 }
 
 window.addEventListener("resize", setBodyHeight);
 setBodyHeight();
 
+//// Header animation
+////////////////////////////
+
+const msg = document.getElementById('header-msg');
+const msgs = ['¿Eres un trabajador y quieres impulsar tu carrera profesional?',
+    '¿Eres un empresario y necesitas equipos de trabajo con mejor motivación, rendimiento y eficiencia?'];
+
+let letterCount = 1;
+let msgCount = 0;
+
+function addLetter() {
+    msg.innerHTML = msgs[msgCount].substring(0, letterCount);
+    letterCount++;
+    if (letterCount > msgs[msgCount].length) {
+        letterCount = 1;
+        msgCount++;
+        if (msgCount >= msgs.length) {
+            msgCount = 0;
+        }
+        setTimeout(addLetter, 3000);
+        return;
+    }
+    setTimeout(addLetter, 100);
+}
+
+addLetter();
 
 
 //// Burger button behavior
