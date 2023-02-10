@@ -24,10 +24,10 @@ function addLetter() {
         if (msgCount >= msgs.length) {
             msgCount = 0;
         }
-        setTimeout(addLetter, 3000);
+        setTimeout(addLetter, 2000);
         return;
     }
-    setTimeout(addLetter, 100);
+    setTimeout(addLetter, 40);
 }
 
 addLetter();
