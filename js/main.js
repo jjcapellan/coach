@@ -1,3 +1,15 @@
+function setBodyHeight(){
+    document.body.style.height = window.innerHeight + 'px';
+}
+
+window.addEventListener("resize", setBodyHeight);
+setBodyHeight();
+
+
+
+//// Burger button behavior
+////////////////////////////
+
 const btnBurger = document.getElementById('btn-burger');
 const burgerPath = btnBurger.getElementsByTagName('path').item(0);
 const btnCta = document.getElementById('btn-cta');
