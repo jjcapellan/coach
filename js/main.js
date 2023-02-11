@@ -1,9 +1,30 @@
+let lastHash = '';
+let scrollHandler = () => { };
+
+function scrollToHash(hash) {
+    if (hash == '') return;
+    hash = hash.substring(1);
+    const el = document.getElementById(hash);
+    el.scrollIntoView({ inline: 'start' });
+};
+
 function setBodyHeight() {
     document.body.style.height = window.innerHeight + 'px';
+    requestAnimationFrame(() => {
+        scrollToHash(lastHash);
+    });
 }
 
 window.addEventListener("resize", setBodyHeight);
 setBodyHeight();
+
+screen.orientation.addEventListener('change', () => {
+
+    requestAnimationFrame(() => {
+        scrollToHash(lastHash);
+    });
+
+});
 
 //// Header animation
 ////////////////////////////
@@ -47,6 +68,7 @@ const closePath = 'm12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.5
 
 let menuOpen = false;
 
+
 btnBurger.addEventListener('pointerdown', () => {
     if (!menuOpen) {
         menu.style.display = 'flex';
@@ -59,4 +81,16 @@ btnBurger.addEventListener('pointerdown', () => {
     burgerPath.setAttribute('d', openPath);
     menuOpen = false;
     return;
+});
+
+menu.addEventListener('pointerdown', (e) => {
+
+    menu.style.display = 'none';
+    burgerPath.setAttribute('d', openPath);
+    menuOpen = false;
+    if (e.target.hash != '') {
+        lastHash = e.target.hash;
+        e.target.click();
+    }
+
 });
