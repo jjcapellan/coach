@@ -1,83 +1,70 @@
-#btn-cta{
-    transition: background-color 0.2s;
+#btn-cta {
+	transition: background-color 0.2s;
 }
-
 #btn-cta:hover {
-    background-color: #fd8928;
+	background-color: #fd8928;
 }
-
 #header-title {
-    background-color: #ffffff;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-    justify-content: center;
-    width: 100%;
-    z-index: 2;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+	background-color: #ffffff;
+	width: 100%;
+	height: 100vh;
 }
-
 #header-cursor {
-    animation-name: acursor;
-    animation-duration: 400ms;
-    animation-iteration-count: infinite;
+	animation-name: acursor;
+	animation-duration: 400ms;
+	animation-iteration-count: infinite;
 }
-
 #left-title {
-    align-items: center;
-    background-color: #222222;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    font-size: 3vw;
-    height: 100%;
-    justify-content: center;
-    padding: 5%;
-    padding-top: 48px;
-    text-align: center;
-    width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #222222;
+	padding: 5%;
+	padding-top: 48px;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	color: #ffffff;
+	font-size: 3vw;
 }
-
 #right-title {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 100%;
-    justify-content: center;
-    width: 50%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	height: 100%;
 }
-
 #big-logo {
-    max-height: 60%;
-    max-width: 80%;
+	max-width: 80%;
+	max-height: 60%;
 }
-
 @keyframes acursor {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
-
 @media (orientation: portrait) {
-
-    #header-title {
-        flex-direction: column;
-    }
-
-    #left-title {
-        font-size: 1.5em;
-        height: 50%;
-        width: 100%;
-    }
-
-    #right-title {
-        height: 50%;
-        width: 100%;
-    }
-
+	#header-title {
+		flex-direction: column;
+	}
+	#left-title {
+		width: 100%;
+		height: 50%;
+		font-size: 1.5em;
+	}
+	#right-title {
+		width: 100%;
+		height: 50%;
+	}
 }
