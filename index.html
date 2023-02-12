@@ -7,20 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover">
     <title>Alvaro Capellan Coach</title>
     <link rel="stylesheet" href="css/styles1.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
 
 
-    <svg xmlns="http://www.w3.org/2000/svg" id="btn-burger" height="48" width="48">
+    <!--<svg xmlns="http://www.w3.org/2000/svg" id="btn-burger" height="48" width="48">
         <path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z" />
-    </svg>
+    </svg>-->
+    <img src="assets/burger_48.png" id="btn-burger">
 
     <nav id="main-menu" class="hide-menu">
         <a href="#Page1">Sobre mi</a>
         <a href="#Page2">Servicios</a>
         <a href="#Page3">Tarifas</a>
-        <a href="#Page3">Contacto</a>
+        <a href="#contac">Contacto</a>
     </nav>
 
 
@@ -33,15 +36,58 @@
             </div>
             <div id="right-title">
                 <img id="big-logo" src="assets/logo.svg">
-                <button id="btn-cta">Prueba una sesion gratis</button>
+                <button id="btn-cta" class="btn bkcol-orange col-white">Prueba una sesion gratis</button>
             </div>
         </div>
     </header>
 
 
 
-    <section>
-        <h2></h2>
+    <section id="contac">
+        <div id="contac-title">
+            <h2 id="contac-title-text">Hablemos</h2>
+            <p id="contac-title-tagline">¿Quieres contactar conmigo? No dudes en enviarme tus preguntas, peticiones o sugerencias.</p>
+        </div>
+
+
+        <div id="contac-container">
+            <div id="contac-items">
+                <div class="contac-item">
+                    <!--<svg id="ico-location" xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                    <path
+                        d="M24 23.5q1.45 0 2.475-1.025Q27.5 21.45 27.5 20q0-1.45-1.025-2.475Q25.45 16.5 24 16.5q-1.45 0-2.475 1.025Q20.5 18.55 20.5 20q0 1.45 1.025 2.475Q22.55 23.5 24 23.5Zm0 16.55q6.65-6.05 9.825-10.975Q37 24.15 37 20.4q0-5.9-3.775-9.65T24 7q-5.45 0-9.225 3.75Q11 14.5 11 20.4q0 3.75 3.25 8.675Q17.5 34 24 40.05ZM24 44q-8.05-6.85-12.025-12.725Q8 25.4 8 20.4q0-7.5 4.825-11.95Q17.65 4 24 4q6.35 0 11.175 4.45Q40 12.9 40 20.4q0 5-3.975 10.875T24 44Zm0-23.6Z" />
+                </svg>-->
+                    <img src="assets/location_48.svg">
+                    <span class="contac-label">Fuengirola (Málaga)</span>
+                </div>
+                <div class="contac-item">
+                    <!--<svg id="ico-mail" xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                    <path
+                        d="M7 40q-1.2 0-2.1-.9Q4 38.2 4 37V11q0-1.2.9-2.1Q5.8 8 7 8h34q1.2 0 2.1.9.9.9.9 2.1v26q0 1.2-.9 2.1-.9.9-2.1.9Zm17-15.1L7 13.75V37h34V13.75Zm0-3L40.8 11H7.25ZM7 13.75V11v26Z" />
+                </svg>-->
+                    <img src="assets/mail_48.svg">
+                    <span class="contac-label">info@accoach.es</span>
+                </div>
+                <div class="contac-item">
+                    <!--<svg id="ico-phone" xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                    <path
+                        d="M39.75 42q-6.1 0-12.125-3T16.8 31.2Q12 26.4 9 20.375 6 14.35 6 8.25q0-.95.65-1.6Q7.3 6 8.25 6h7q.7 0 1.225.475.525.475.675 1.275l1.35 6.3q.1.7-.025 1.275t-.525.975l-5 5.05q2.8 4.65 6.275 8.1Q22.7 32.9 27.1 35.3l4.75-4.9q.5-.55 1.15-.775.65-.225 1.3-.075l5.95 1.3q.75.15 1.25.75T42 33v6.75q0 .95-.65 1.6-.65.65-1.6.65Zm-28.3-23.4 4.05-4.1L14.35 9H9q0 1.95.6 4.275t1.85 5.325ZM29.9 36.75q2.05.95 4.45 1.55 2.4.6 4.65.7v-5.35l-5.15-1.05ZM11.45 18.6ZM29.9 36.75Z" />
+                </svg>-->
+                    <img src="assets/phone_48.svg">
+                    <span class="contac-label">(+34) 66x 66x 66x</span>
+                </div>
+
+            </div>
+
+
+            <form id="contac-form" action="#" method="post">
+                <input type="text" class="textbox" id="fname" name="fname" placeholder=" NOMBRE COMPLETO" size="90"><br>
+                <input type="email" class="textbox" id="femail" name="femail" PLACEHOLDER=" EMAIL" size="50"><br>
+                <textarea name="fmsg" id="fmsg" placeholder="TU MENSAJE"></textarea>
+                <input type="submit" id="contac-btn" class="btn bkcol-black col-white" value="Enviar">
+            </form>
+        </div>
+
     </section>
 
 
