@@ -13,6 +13,7 @@
 }
 
 #contac {
+    /*background-image: url('../assets/bg_contact.svg');*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,8 +38,10 @@
     padding: 2rem;
 }
 
-#contac-title p {
+#contac-title-tagline {
     font-size: 1.2rem;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 #contac-title-text {
@@ -51,6 +54,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     /*border-style: solid;*/
 }
@@ -62,10 +66,16 @@
     justify-content: center;
     max-width: 500px;
     height: 100%;
+    padding-top: 3rem;
 }
 
 #contac-btn {
     margin-top: 1.5rem;
+    transition: background-color 0.2s;
+}
+
+#contac-btn:hover {
+    background-color: #444444;
 }
 
 #fmsg {
@@ -73,16 +83,9 @@
     padding: 0.8rem;
 }
 
-@media (orientation: portrait) {
-
-    .contac-item {
+@media (max-width: 680px) and (orientation: portrait) {
+    .contac-item{
         flex-direction: row;
-        padding: 0.2rem;
-    }
-
-    #contac-items {
-        flex-direction: column;
-        width: 100%;
     }
 
     #contac-btn {
@@ -98,12 +101,13 @@
         text-align: left;
         font-size: 1.5rem;
     }
-
+    
     #contac-title-tagline {
         display: none;
     }
 
     #contac-form {
+        
         width: 100%;
     }
 
@@ -114,14 +118,15 @@
 
 }
 
-@media (max-height: 710px) and (orientation: landscape) {
+
+@media (max-height: 540px) {
     #contac-title {
         padding: 0.5rem;
     }
 
     #contac-title-text {
         top: 0;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .contac-item {
@@ -129,19 +134,21 @@
     }
 }
 
-@media (max-height: 650px) and (orientation: landscape) {
-    #contac-container {
-        flex-direction: row;
-        width: 100%;
+@media (max-height: 450px) {
+    #contac-title {
+        padding: 0.5rem;
     }
 
-    #contac-items {
-        flex-direction: column;
-        width:fit-content;
+    #contac-title-text {
+        top: 0;
+        font-size: 1.5rem;
     }
 
-    #contac-form {
-        min-width: unset;
-        width: 50%;
+    #contac-title-tagline{
+        display: none;
+    }
+
+    .contac-item {
+        padding: 0.5rem;
     }
 }

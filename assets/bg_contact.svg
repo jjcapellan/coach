@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" version="1.1" viewBox="0 0 132.29 132.29" xmlns="http://www.w3.org/2000/svg">
+ <g fill="#f9f9f9" stroke-width=".26511">
+  <circle cx="16.832" cy="16.652" r="9.1747"/>
+  <circle cx="50.061" cy="16.652" r="9.1747"/>
+  <circle cx="83.289" cy="16.652" r="9.1747"/>
+  <circle cx="116.52" cy="16.652" r="9.1747"/>
+  <circle cx="16.832" cy="49.99" r="9.1747"/>
+  <circle cx="50.061" cy="49.99" r="9.1747"/>
+  <circle cx="83.289" cy="49.99" r="9.1747"/>
+  <circle cx="116.52" cy="49.99" r="9.1747"/>
+  <circle cx="16.832" cy="83.328" r="9.1747"/>
+  <circle cx="50.061" cy="83.328" r="9.1747"/>
+  <circle cx="83.289" cy="83.328" r="9.1747"/>
+  <circle cx="116.52" cy="83.328" r="9.1747"/>
+  <circle cx="16.832" cy="116.67" r="9.1747"/>
+  <circle cx="50.061" cy="116.67" r="9.1747"/>
+  <circle cx="83.289" cy="116.67" r="9.1747"/>
+  <circle cx="116.52" cy="116.67" r="9.1747"/>
+ </g>
+</svg>

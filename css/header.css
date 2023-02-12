@@ -1,15 +1,9 @@
-/*#btn-cta {
-    background-color: #fa6400;
-    border-style: none;
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 14px;
-}*/
+#btn-cta{
+    transition: background-color 0.2s;
+}
 
 #btn-cta:hover {
-    background-color: #f39658;
-    color: #222222;
+    background-color: #fd8928;
 }
 
 #header-title {
@@ -17,7 +11,7 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    height: 100%;
+    height: 100vh;
     justify-content: center;
     width: 100%;
     z-index: 2;
@@ -76,7 +70,6 @@
     }
 
     #left-title {
-        /*padding-top: 60px;*/
         font-size: 1.5em;
         height: 50%;
         width: 100%;

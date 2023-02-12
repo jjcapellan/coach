@@ -5,11 +5,11 @@ function scrollToHash(hash) {
     if (hash == '') return;
     hash = hash.substring(1);
     const el = document.getElementById(hash);
-    el.scrollIntoView({ inline: 'start' });
+    el.scrollIntoView(true);
 };
 
 function setBodyHeight() {
-    document.body.style.height = window.innerHeight + 'px';
+    //document.body.style.height = window.innerHeight + 'px';
     requestAnimationFrame(() => {
         scrollToHash(lastHash);
     });
@@ -76,7 +76,7 @@ btnBurger.addEventListener('pointerdown', () => {
     }
 
     menu.style.display = 'none';
-    btnBurger.setAttribute('src',srcOpen);
+    btnBurger.setAttribute('src', srcOpen);
     menuOpen = false;
     return;
 });
@@ -91,4 +91,12 @@ menu.addEventListener('pointerdown', (e) => {
         e.target.click();
     }
 
+});
+
+//// Contact form
+///////////////////////////////////
+const btnContact = document.getElementById('contac-btn');
+
+btnContact.addEventListener('pointerdown', (e) => {
+    e.preventDefault();
 });

@@ -21,7 +21,6 @@ html {
 html,
 body {
     margin: 0;
-    /*overflow: hidden;*/
     -ms-overflow-style: none;
     scrollbar-width: none;
     scroll-behavior: smooth;
@@ -35,7 +34,7 @@ body::-webkit-scrollbar {
 header,
 section {
 
-    height: 100%;
+    min-height: 100vh;
     padding-top: var(--safe-top);
     padding-bottom: var(--safe-bottom);
     padding-left: var(--safe-left);
@@ -103,7 +102,6 @@ nav a:hover {
 
 #btn-burger {
     display: block;
-    /*fill: #666666;*/
     position: fixed;
     right: 20px;
     top: 20px;
