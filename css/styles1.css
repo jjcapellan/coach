@@ -91,6 +91,10 @@ nav a:hover {
     color: #ffffff;
 }
 
+.w100 {
+    width: 100%;
+}
+
 .textbox {
     border-style: none;
     border-bottom: solid;

@@ -9,7 +9,6 @@ function scrollToHash(hash) {
 };
 
 function setBodyHeight() {
-    //document.body.style.height = window.innerHeight + 'px';
     requestAnimationFrame(() => {
         scrollToHash(lastHash);
     });
