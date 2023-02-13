@@ -65,6 +65,11 @@
 #contac-btn:hover {
 	background-color: #444444;
 }
+
+#fprivacy{
+	margin: 24px 0;
+}
+
 #fmsg {
 	padding: 0.8rem;
 	min-height: 150px;
