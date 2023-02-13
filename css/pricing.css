@@ -1,0 +1,44 @@
+.pricing-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0.5rem;
+    width: 230px;
+    padding: 0.5rem;
+}
+
+.pricing-item-title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.pricing-items-prize {
+    font-size: 2rem;
+}
+
+.pricing-item-list {
+    list-style-image: url('../assets/check_24.svg');
+    list-style-position: inside;
+}
+
+#pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#pricing-title-text {
+    text-align: center;
+    font-size: 3rem;
+}
+
+#pricing-items-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    padding-top: 2rem;
+    width: 100%;
+}
