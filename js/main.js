@@ -95,8 +95,16 @@ menu.addEventListener('pointerdown', (e) => {
 
 //// Contact form
 ///////////////////////////////////
+const formContact = document.getElementById('contac-form');
 const btnContact = document.getElementById('contac-btn');
+const chkContact = document.getElementById('fprivacy');
 
 btnContact.addEventListener('pointerdown', (e) => {
     e.preventDefault();
+    console.log(chkContact.checked);
+    if (chkContact.checked) {
+        alert('Tu mensaje se ha enviado. Gracias, te responderé lo antes posible.');
+    } else {
+        alert('Debes aceptar la política de privacidad para poder enviar tu mensaje.');
+    }
 });
