@@ -37,10 +37,10 @@
 	padding-left: 70px;
 	font-size: 1.2rem;
 }
-#contac-title-text {
+/*#contac-title-text {
 	text-align: center;
 	font-size: 3rem;
-}
+}*/
 #contac-items {
 	display: flex;
 	flex-direction: row;

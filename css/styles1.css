@@ -87,8 +87,31 @@ nav a:hover {
     background-color: #222222;
 }
 
+.bkcol-gray {
+    background-color: #ececec;
+}
+
 .col-white {
     color: #ffffff;
+}
+
+.col-black{
+    color: #222222;
+}
+
+.font-title {
+	padding: 2rem;
+	text-align: center;
+	font-size: 3.5rem;
+}
+
+.separator {
+    position: relative;
+    bottom: -2px;
+    width: 100%;
+    height: 5rem;
+    margin: 0;
+    padding: 0;
 }
 
 .w100 {
@@ -117,7 +140,7 @@ nav a:hover {
         font-size: 16px;
     }
 
-    #btn-burger{
+    #btn-burger {
         width: 24px;
         height: 24px;
     }
