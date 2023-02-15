@@ -5,7 +5,7 @@
 	align-items: flex-start;
 	justify-content: flex-start;
 	margin: 0 0.8rem 1.4rem;
-	box-shadow: 0px 0px 2px 2px #d3d3d3;
+	border: thin solid #cbcbcb;
 	padding: 0.5rem;
 	width: 250px;
 }
