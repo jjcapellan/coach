@@ -1,10 +1,14 @@
 let lastHash = '';
 let scrollHandler = () => { };
 
-function scrollToHash(hash) {
+function scrollToHash(hash) {    
     if (hash == '') return;
+
     hash = hash.substring(1);
     const el = document.getElementById(hash);
+    let distance = Math.abs(el.offsetTop - window.scrollY);
+    if(distance > 100) return;
+
     el.scrollIntoView(true);
 };
 

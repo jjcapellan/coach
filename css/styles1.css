@@ -23,7 +23,7 @@ body {
     margin: 0;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    scroll-behavior: smooth;
+    /*scroll-behavior: smooth;*/
     padding: 0;
 }
 
