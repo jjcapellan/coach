@@ -114,6 +114,13 @@ nav a:hover {
     padding: 0;
 }
 
+.title-tagline {
+    margin-top: -3rem;
+	padding: 0 2rem 0;
+	font-size: 1.2rem;
+    text-align: center;
+}
+
 .w100 {
     width: 100%;
 }

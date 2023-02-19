@@ -29,19 +29,6 @@
 	height: 80%;
 }
 
-#contac-title {
-	background-color: #222222;
-	padding: 2rem;
-	width: 100%;
-	text-align: center;
-	color: #ffffff;
-}
-
-#contac-title-tagline {
-	padding: 0 2rem 0;
-	font-size: 1.2rem;
-}
-
 #contac-items {
 	display: flex;
 	flex-direction: row;
