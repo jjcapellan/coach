@@ -21,14 +21,7 @@ html {
 html,
 body {
     margin: 0;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    /*scroll-behavior: smooth;*/
     padding: 0;
-}
-
-body::-webkit-scrollbar {
-    display: none;
 }
 
 header,
@@ -38,7 +31,6 @@ section {
     padding-bottom: var(--safe-bottom);
     padding-left: var(--safe-left);
     padding-right: var(--safe-right);
-    overflow: hidden;
 }
 
 footer {
@@ -47,7 +39,6 @@ footer {
     padding-bottom: var(--safe-bottom);
     padding-left: var(--safe-left);
     padding-right: var(--safe-right);
-    overflow: hidden;
     text-align: center;
 }
 
@@ -112,14 +103,14 @@ nav a:hover {
     color: #ffffff;
 }
 
-.col-black{
+.col-black {
     color: #222222;
 }
 
 .font-title {
-	padding: 2rem;
-	text-align: center;
-	font-size: 3.5rem;
+    padding: 2rem;
+    text-align: center;
+    font-size: 3.5rem;
 }
 
 .separator {
@@ -134,13 +125,13 @@ nav a:hover {
 .social-icon {
     width: 2rem;
     height: auto;
-    margin: 2rem 2rem;    
+    margin: 2rem 2rem;
 }
 
 .title-tagline {
     margin-top: -3rem;
-	padding: 0 2rem 0;
-	font-size: 1.2rem;
+    padding: 0 2rem 0;
+    font-size: 1.2rem;
     text-align: center;
 }
 
@@ -160,6 +151,8 @@ nav a:hover {
 #btn-burger {
     display: block;
     position: fixed;
+    width: 24px;
+    height: 24px;
     right: 20px;
     top: 20px;
     z-index: 20;
@@ -168,10 +161,5 @@ nav a:hover {
 @media only screen and (hover: none) and (pointer: coarse) {
     html {
         font-size: 16px;
-    }
-
-    #btn-burger {
-        width: 24px;
-        height: 24px;
     }
 }
