@@ -62,7 +62,7 @@ addLetter();
 
 const btnBurger = document.getElementById('btn-burger');
 const btnCta = document.getElementById('btn-cta');
-const menu = document.getElementById('main-menu');
+const menu = document.getElementById('burger-menu');
 const srcClose = 'assets/close_48.svg';
 const srcOpen = 'assets/burger_48.png';
 
