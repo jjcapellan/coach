@@ -71,6 +71,19 @@ textarea {
     min-height: 150px;
 }
 
+.arrow {
+    position: absolute;
+    opacity: 0.5;
+    left: calc(50% - 0.5rem);
+    bottom: 0.5rem;
+    width: 0;
+    height: 0;
+    border: 0.5rem solid transparent;
+    border-top: 1rem solid white;
+    border-bottom: 0;
+    mix-blend-mode: difference;
+}
+
 .burger-menu {
     background-color: #222222;
     bottom: 0;
@@ -226,6 +239,22 @@ textarea {
     height: 2rem;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
+}
+
+.animation-updown {
+	animation-name: UpDown;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+}
+@keyframes UpDown {
+	from {
+		-webkit-transform: translateY(-0.4rem);
+	}
+	to {
+		-webkit-transform: translateY(0.4rem);
+	}
 }
 
 #btn-burger {
