@@ -1,13 +1,13 @@
 let lastHash = '';
 let scrollHandler = () => { };
 
-function scrollToHash(hash) {    
+function scrollToHash(hash) {
     if (hash == '') return;
 
     hash = hash.substring(1);
     const el = document.getElementById(hash);
     let distance = Math.abs(el.offsetTop - window.scrollY);
-    if(distance > 100) return;
+    if (distance > 100) return;
 
     el.scrollIntoView(true);
 };
@@ -33,28 +33,31 @@ screen.orientation.addEventListener('change', () => {
 ////////////////////////////
 
 const msg = document.getElementById('header-msg');
-const msgs = ['¿Eres un trabajador y quieres impulsar tu carrera profesional?',
-    '¿Eres un empresario y necesitas equipos de trabajo con mejor motivación, rendimiento y eficiencia?'];
+const msgs = [
+    '¿Estás estancado en tu trabajo?',
+    '¿Tus empleados no son competitivos?',
+    '¿Te bloqueas cuando hablas en público?',
+    '¿Tienes problemas de liderazgo?',
+    '¿No sabes como afrontar un proceso de selección?',
+    '¿Sientes que desperdicias el talento de tus empleados?',
+    '¿Quieres reorientar tu carrera profesional?',
+    '¿Sabes que hacer ante un conflicto laboral?'];
 
-let letterCount = 1;
 let msgCount = 0;
-
-function addLetter() {
-    msg.innerHTML = msgs[msgCount].substring(0, letterCount);
-    letterCount++;
-    if (letterCount > msgs[msgCount].length) {
-        letterCount = 1;
-        msgCount++;
-        if (msgCount >= msgs.length) {
-            msgCount = 0;
-        }
-        setTimeout(addLetter, 2000);
-        return;
+function popUpMsg() {    
+    msg.style.opacity = '0';
+    setTimeout(() => {
+        msg.innerHTML = msgs[msgCount];
+        msg.style.opacity = '1';
+    }, 400);    
+    msgCount++;
+    if (msgCount >= msgs.length) {
+        msgCount = 0;
     }
-    setTimeout(addLetter, 40);
+    setTimeout(popUpMsg, 3000);
 }
 
-addLetter();
+popUpMsg();
 
 
 //// Burger button behavior

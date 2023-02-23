@@ -84,6 +84,20 @@ textarea {
     mix-blend-mode: difference;
 }
 
+.big-title {
+    font-size: 6vw;
+    color: #fff;
+    margin-bottom: 2vw;
+    letter-spacing: 1.4vw;
+}
+
+.big-title-tagline {
+    color: #ccc;
+    font-size: 3vw;
+    margin: 0;
+    letter-spacing: 0.7vw;
+}
+
 .burger-menu {
     background-color: #222222;
     bottom: 0;
@@ -170,6 +184,10 @@ textarea {
     height: 100%;
 }
 
+.h1rem {
+    height: 1rem;
+}
+
 .icon-label {
     margin: 0 1.5rem;
 }
@@ -229,8 +247,22 @@ textarea {
     text-align: center;
 }
 
+.vertical-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .w100 {
     width: 100%;
+}
+
+.mxw90 {
+    max-width: 90%;
+}
+
+.tx-align-center {
+    text-align: center;
 }
 
 .textbox {
@@ -242,19 +274,21 @@ textarea {
 }
 
 .animation-updown {
-	animation-name: UpDown;
-	animation-duration: 0.5s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate-reverse;
-	animation-fill-mode: both;
+    animation-name: UpDown;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
 }
+
 @keyframes UpDown {
-	from {
-		-webkit-transform: translateY(-0.4rem);
-	}
-	to {
-		-webkit-transform: translateY(0.4rem);
-	}
+    from {
+        -webkit-transform: translateY(-0.4rem);
+    }
+
+    to {
+        -webkit-transform: translateY(0.4rem);
+    }
 }
 
 #btn-burger {
